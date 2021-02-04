@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("Quarkus Hello World!!"));
+             .body(is("[application.properties] - Quarkus Hello World!!"));
     }
 
 }
