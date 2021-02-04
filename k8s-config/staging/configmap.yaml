@@ -3,4 +3,5 @@ kind: ConfigMap
 metadata:
   name: quarkus-hello-world
 data:
-  greeting.message: Hello Quarkus World!! (configmap)
+  application.properties: |-
+    greeting.message: Hello Quarkus World!! (configmap)
