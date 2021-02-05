@@ -1,0 +1,19 @@
+# Used when running locally in dev mode
+"%dev":
+  greeting: "[application.properties] - Quarkus Hello World!!"
+  quarkus:
+    kubernetes-config:
+      enabled: false
+# Used when running in testing mode
+"%test":
+  greeting: "[application.properties] - Quarkus Hello World!!"
+  quarkus:
+    kubernetes-config:
+      enabled: false
+# Used when deploying to the cloud
+"%prod":
+  quarkus:
+    kubernetes-config:
+      enabled: true
+      config-maps: 
+        - quarkus-hello-world
