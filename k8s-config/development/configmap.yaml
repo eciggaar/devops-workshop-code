@@ -5,3 +5,5 @@ metadata:
 data:
   application.properties: |-
     greeting.message: Hello Quarkus World!! (configmap)
+    environment:
+      name: dev
